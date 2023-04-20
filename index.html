@@ -3,10 +3,31 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
-        <link rel = "stylesheet" href="style.css" />
-        <title>My Project</title>
+        <link rel = "stylesheet" href="login_page.css" />
+        <title>Login</title>
     </head>
     <body>
-        <h1>Starter</h1>
+        <div class="main-div">
+            <h1 id="login-header">Login</h1>
+
+            <div id="login-content-container">
+                <input id="input-text-fields" type="text" name="username"
+                placeholder="Enter username">
+                <br><br>
+                <input id="input-text-fields" type="password" name="password"
+                placeholder="Enter password">
+                <br><br>
+            </div>
+
+            <div id="login-error-msg-holder">
+                <p class="error-message">Invalid username and/or password</span></p>
+            </div>
+
+            <div id="login-button-container">
+                <button id="login-button">Login</button>
+            </div>
+
+            </form>
+        </div>
     </body>
 </html>

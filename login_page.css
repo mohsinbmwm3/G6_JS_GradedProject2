@@ -1,0 +1,62 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #001e4d;
+}
+
+.main-div {
+    align-items: center;
+    width: 50%;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: white;
+}
+
+.main-div h1 {
+    font-size: xx-large;
+    color: #001e4d;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+.error-message {
+    display: none;
+    font-size: medium;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#login-content-container {
+    align-items: center;
+    width: 100%;
+}
+
+#login-button {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 700;
+    font-size: medium;
+    width: 150px;
+    border: 0px;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#input-text-fields {
+    height: 30px;
+    width: 50%;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#login-button-container {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
