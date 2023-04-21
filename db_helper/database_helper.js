@@ -1,5 +1,5 @@
-import data from './dummy_data/Data.json' assert { type: 'json' };
-import userCred from './dummy_data/user-cred.json' assert { type: 'json' };
+import data from '../dummy_data/Data.json' assert { type: 'json' };
+import userCred from '../dummy_data/user-cred.json' assert { type: 'json' };
 
 function printData() {
     console.log(resumes);
