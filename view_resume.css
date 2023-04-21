@@ -1,0 +1,22 @@
+#main-div {
+    justify-content: center;
+}
+#header-search-container {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    margin: auto;
+    width: 50%;
+    display: table;
+}
+#content-card-div {
+    border-radius: 10px;
+    margin-top: 0px;
+    padding: 10px;
+    background-color: white;
+    margin: 10px auto 0;
+    width: 90%;
+}
+#name {
+    
+}
