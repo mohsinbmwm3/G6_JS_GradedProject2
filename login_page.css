@@ -26,6 +26,10 @@ body {
 
 #login-error-msg-holder {
     display: none;
+}
+
+.login-error-msg-label {
+    font-weight: 900;
     font-size: medium;
     color: red;
     font-family: 'Courier New', Courier, monospace;
