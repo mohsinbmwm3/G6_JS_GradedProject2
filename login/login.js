@@ -4,24 +4,30 @@ const btnLogin = document.getElementById("login-button");
 const containerLoginErrorMsg = document.getElementById("login-error-msg-holder");
 const lblLoginError = document.getElementById("login-error-message");
 
-if(btnLogin != null) {
-    btnLogin.addEventListener("click", (e) => {
-        var username = document.getElementById("username-input").value;
-        var password = document.getElementById("password-input").value;
 
-        if((username == null || username === "") || (password == null || password === "")) {
-            onLoginFailureDueToEmptyCredentials();
+btnLogin.addEventListener("click", (e) => {
+    var username = document.getElementById("username-input").value;
+    var password = document.getElementById("password-input").value;
+    console.log("clicked");
+    if ((username == null || username === "") || (password == null || password === "")) {
+        onLoginFailureDueToEmptyCredentials();
+    } else {
+        containerLoginErrorMsg.style.display = "none";
+        if (isUserExists(username, password)) {
+            onLoginSuccess(() => {
+                window.location.replace("/view_resume.html");
+            });
         } else {
-            containerLoginErrorMsg.style.display = "none";
-            if(isUserExists(username, password)) {
-                onLoginSuccess(() => {
-                    window.location.replace("/view_resume.html");
-                });
-            } else {
-                onLoginFailureDueToInvalidCredentials();
-            }
+            onLoginFailureDueToInvalidCredentials();
         }
-    });
+    }
+});
+
+function fetchData() {
+    fetch('.dummy_data/Data.json')
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error));
 }
 
 function onLoginSuccess(callback) {
