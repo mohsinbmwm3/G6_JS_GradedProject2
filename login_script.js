@@ -1,5 +1,9 @@
+import { printData } from './database_helper.js'
+
 const btnLogin = document.getElementById("login-button");
 const containerLoginErrorMsg = document.getElementById("login-error-msg-holder");
+
+printData();
 
 if(btnLogin != null) {
     btnLogin.addEventListener("click", (e) => {
