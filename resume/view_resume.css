@@ -7,8 +7,10 @@
     padding: 20px;
     background-color: white;
     margin: auto;
-    width: 50%;
-    display: table;
+    width: 90%;
+    flex-direction: row;
+
+    /* display: table; */
 }
 
 #content-card-div {
@@ -18,6 +20,7 @@
     background-color: white;
     margin: 10px auto 0;
     width: 90%;
+    display: block;
 }
 
 #content-no-resume-div {
@@ -48,4 +51,28 @@
 img {
     max-width: 50%;
     max-height: 50%;
+}
+
+
+.small_text {
+    color: #001e4d;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: auto;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.small_text_heading {
+    color: #001e4d;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: auto;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
 }
