@@ -3,10 +3,8 @@ const btnPrevious = document.getElementById("previous-button");
 const btnNext = document.getElementById("next-button");
 const containerLoginErrorMsg = document.getElementById("search-error-msg-holder");
 const lblLoginError = document.getElementById("search-error-message");
-const resumeDiv = document.getElementById("content-card-div");
-const noresumeDiv = document.getElementById("content-no-resume-div");
-const personName = document.getElementById("name");
-const appliedFor = document.getElementById("appliedFor");
+const noresumeDiv = document.getElementById("no-resume");
+const resumeDiv = document.getElementById("resume")
 var resume = [];
 var currentPosition = 0;
 
@@ -19,9 +17,7 @@ window.onload = () => {
         noresumeDiv.style.display = "none"
         showButtons()
     }
-
 }
-
 
 function showButtons() {
     console.log("current position " + currentPosition + " length " + resume.length);
@@ -41,12 +37,15 @@ function showButtons() {
 }
 
 function updateResume() {
-    personName.innerText = resume[currentPosition].basics.name;
-    appliedFor.innerHTML = `<small_text_heading>Applied For </small_text_heading> <small_text>${resume[currentPosition].basics.AppliedFor}</small_text>`
+    //   personName.innerText = resume[currentPosition].basics.name;
+    // appliedFor.innerText = resume[currentPosition].basics.AppliedFor;
+    const currentResume = allResumes[currentResumeIndex];
+    //   personName.innerText = resume[currentPosition].basics.name;
+
 }
 
-btnNext.addEventListener("click", (e) => {
 
+btnNext.addEventListener("click", (e) => {
     if (currentPosition < resume.length) {
         currentPosition++;
     }
@@ -79,7 +78,7 @@ if (btnSearch != null) {
             }
             if (resume.length == 0) {
                 resumeDiv.style.display = "none"
-                noresumeDiv.style.display = "flex"
+                noresumeDiv.style.display = "block"
             } else {
                 resumeDiv.style.display = "block"
                 noresumeDiv.style.display = "none"

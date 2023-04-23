@@ -1,5 +1,15 @@
 #main-div {
     justify-content: center;
+    margin-top: 50px;
+}
+
+#main-resume {
+    justify-content: center;
+    margin-top: 50px;
+    background-color: white;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
 }
 
 #header-search-container {
@@ -15,12 +25,98 @@
 
 #content-card-div {
     border-radius: 10px;
-    margin-top: 0px;
     padding: 10px;
     background-color: white;
-    margin: 10px auto 0;
-    width: 90%;
+    margin-top: 10px;
+    flex-direction: row;
+
+}
+
+.no_resume_class {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.vertical_class {
     display: block;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-width: 80%;
+}
+
+.horizontal_class_main {
+    flex-direction: row;
+    display: flex;
+}
+
+.horizontal_class h4 {
+    display: inline;
+    max-width: min-content;
+    max-height: min-content;
+}
+
+.horizontal_class h5 {
+    display: inline;
+    max-width: min-content;
+    max-height: min-content;
+}
+
+
+
+
+.vertical_class_40 {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-width: 40%;
+}
+
+.vertical_class_60 {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-width: 60%;
+}
+
+.no_resume_class img {
+    max-width: 20%;
+    max-height: 20%;
+    border-radius: 50%;
+}
+
+.no_resume_class h1 {
+    max-width: 70%;
+    margin: 20px;
+}
+
+/*  to change the layout of the div inside the content card div
+#content-card-div div {
+    display: flex;
+    flex-direction: row;
+
+} */
+
+#appliedFor {
+    display: block;
+    flex-direction: row;
+}
+
+#content-card-div div h2 {
+    width: 30%;
+    color: #001e4d;
+
+
+}
+
+#appliedFor #content {
+    width: 70%;
+    color: #001e4d;
+
 }
 
 #content-no-resume-div {
@@ -33,6 +129,24 @@
     display: flex;
     align-items: center;
     justify-content: center
+}
+
+
+#content-side-by-side {
+    border-radius: 10px;
+    margin-top: 0px;
+    padding: 10px;
+    background-color: white;
+    margin: 10px auto 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-side-by-side image img {
+    max-width: 30%;
+    border-radius: 50%;
 }
 
 #name {}
@@ -48,7 +162,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-img {
+#content-no-resume-div image {
     max-width: 50%;
     max-height: 50%;
 }
@@ -75,4 +189,10 @@ img {
     height: auto;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
+}
+
+.details-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
