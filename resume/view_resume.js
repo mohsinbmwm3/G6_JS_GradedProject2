@@ -5,6 +5,11 @@ const containerLoginErrorMsg = document.getElementById("search-error-msg-holder"
 const lblLoginError = document.getElementById("search-error-message");
 const noresumeDiv = document.getElementById("no-resume");
 const resumeDiv = document.getElementById("resume")
+const personName = document.getElementById("name")
+const appliedFor = document.getElementById("appliedFor")
+const phone = document.getElementById("phone")
+const email = document.getElementById("email")
+const linkedin = document.getElementById("linkedin")
 var resume = [];
 var currentPosition = 0;
 
@@ -39,9 +44,12 @@ function showButtons() {
 function updateResume() {
     //   personName.innerText = resume[currentPosition].basics.name;
     // appliedFor.innerText = resume[currentPosition].basics.AppliedFor;
-    const currentResume = allResumes[currentResumeIndex];
-    //   personName.innerText = resume[currentPosition].basics.name;
-
+    const currentResume = resume[currentPosition];
+    personName.innerText = currentResume.basics.name;
+    appliedFor.innerText = currentResume.basics.AppliedFor;
+    phone.innerText = currentResume.basics.phone;
+    email.innerText = currentResume.basics.email;
+    linkedin.innerText = currentResume.basics.profiles.url;
 }
 
 
@@ -83,7 +91,6 @@ if (btnSearch != null) {
                 resumeDiv.style.display = "block"
                 noresumeDiv.style.display = "none"
             }
-
         }
     });
 }
