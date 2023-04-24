@@ -10,6 +10,7 @@ const appliedFor = document.getElementById("appliedFor")
 const phone = document.getElementById("phone")
 const email = document.getElementById("email")
 const linkedin = document.getElementById("linkedin")
+const tecSkills = document.getElementById("skills")
 var resume = [];
 var currentPosition = 0;
 
@@ -50,6 +51,15 @@ function updateResume() {
     phone.innerText = currentResume.basics.phone;
     email.innerText = currentResume.basics.email;
     linkedin.innerText = currentResume.basics.profiles.url;
+    var skills = ""
+    for (items in currentResume.skills.keywords) {
+        if (items > 0) {
+            skills += "\n"
+        }
+        skills += currentResume.skills.keywords[items]
+        console.log("items " + currentResume.skills.keywords[items]);
+    }
+    tecSkills.innerText = skills;
 }
 
 
