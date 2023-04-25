@@ -39,6 +39,13 @@
     padding: 20px;
 }
 
+.horizontal_class_no_padding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+}
+
 .vertical_class {
     display: block;
     flex-direction: column;
@@ -89,6 +96,20 @@
     align-items: center;
     padding: 10px;
     min-width: 65%;
+}
+
+.vertical_class_60 h4 {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+.vertical_class_60 h3 {
+    /* text-align: right; */
+    margin-top: 5px;
+    padding: 0px;
+    font-weight: 500;
+
 }
 
 .no_resume_class img {
