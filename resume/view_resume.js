@@ -11,6 +11,11 @@ const phone = document.getElementById("phone")
 const email = document.getElementById("email")
 const linkedin = document.getElementById("linkedin")
 const tecSkills = document.getElementById("skills")
+const hobbies = document.getElementById("hobbies")
+const company = document.getElementById("company")
+const position = document.getElementById("position")
+const startDate = document.getElementById("startDate")
+const endDate = document.getElementById("endDate")
 var resume = [];
 var currentPosition = 0;
 
@@ -50,7 +55,9 @@ function updateResume() {
     appliedFor.innerText = currentResume.basics.AppliedFor;
     phone.innerText = currentResume.basics.phone;
     email.innerText = currentResume.basics.email;
+    email.innerText = currentResume.basics.email;
     linkedin.innerText = currentResume.basics.profiles.url;
+    company.innerText = currentResume.work["Company Name"];
     var skills = ""
     for (items in currentResume.skills.keywords) {
         if (items > 0) {
@@ -60,6 +67,19 @@ function updateResume() {
         console.log("items " + currentResume.skills.keywords[items]);
     }
     tecSkills.innerText = skills;
+
+    var resumeHobbies = ""
+    for (items in currentResume.interests.hobbies) {
+        if (items > 0) {
+            resumeHobbies += "\n"
+        }
+        resumeHobbies += currentResume.interests.hobbies[items]
+        console.log("items " + currentResume.interests.hobbies[items]);
+    }
+    hobbies.innerText = resumeHobbies;
+    position.innerText = currentResume.work.Position;
+    startDate.innerText = currentResume.work["Start Date"];
+    endDate.innerText = currentResume.work["End Date"];
 }
 
 
