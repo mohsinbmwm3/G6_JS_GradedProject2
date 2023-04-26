@@ -17,6 +17,7 @@ const position = document.getElementById("position")
 const startDate = document.getElementById("startDate")
 const endDate = document.getElementById("endDate")
 const summary = document.getElementById("summary")
+const project = document.getElementById("project")
 var resume = [];
 var currentPosition = 0;
 
@@ -59,7 +60,8 @@ function updateResume() {
     email.innerText = currentResume.basics.email;
     linkedin.innerText = currentResume.basics.profiles.url;
     company.innerText = currentResume.work["Company Name"];
-    summary.innerText = currentResume.work["Summary"];
+    summary.innerHTML = `<h4>Summary</h4><p>${currentResume.work["Summary"]}</p>`;
+    project.innerHTML = `<div><h4>${currentResume.projects["name"]}</h4><p>${currentResume.projects["description"]}</p><div>`;
     var skills = ""
     for (items in currentResume.skills.keywords) {
         if (items > 0) {
