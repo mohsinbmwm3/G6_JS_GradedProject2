@@ -18,6 +18,9 @@ const startDate = document.getElementById("startDate")
 const endDate = document.getElementById("endDate")
 const summary = document.getElementById("summary")
 const project = document.getElementById("project")
+const ugEdu = document.getElementById("ugEdu")
+const SeniorEdu = document.getElementById("SeniorEdu")
+const highSchool = document.getElementById("highSchool")
 var resume = [];
 var currentPosition = 0;
 
@@ -84,6 +87,11 @@ function updateResume() {
     position.innerText = currentResume.work.Position;
     startDate.innerText = currentResume.work["Start Date"];
     endDate.innerText = currentResume.work["End Date"];
+
+    ugEdu.innerHTML = `<div><p><b>UG</b> ${currentResume.education.UG.institute}, ${currentResume.education.UG.course} ${currentResume.education.UG["Start Date"]} ${currentResume.education.UG["End Date"]}}<br></p><div>`;
+    SeniorEdu.innerHTML = `<div><p><b>UG</b> ${currentResume.education["Senior Secondary"].institute}, ${currentResume.education["Senior Secondary"].cgpa}</p><div>`;
+    highSchool.innerHTML = `<div><p><b>UG</b> ${currentResume.education["High School"].institute}, ${currentResume.education["High School"].cgpa}</p><div>`;
+
 }
 
 
