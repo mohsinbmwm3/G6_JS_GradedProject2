@@ -89,8 +89,8 @@ function updateResume() {
     endDate.innerText = currentResume.work["End Date"];
 
     ugEdu.innerHTML = `<div><p><b>UG</b> ${currentResume.education.UG.institute}, ${currentResume.education.UG.course} ${currentResume.education.UG["Start Date"]} ${currentResume.education.UG["End Date"]}}<br></p><div>`;
-    SeniorEdu.innerHTML = `<div><p><b>UG</b> ${currentResume.education["Senior Secondary"].institute}, ${currentResume.education["Senior Secondary"].cgpa}</p><div>`;
-    highSchool.innerHTML = `<div><p><b>UG</b> ${currentResume.education["High School"].institute}, ${currentResume.education["High School"].cgpa}</p><div>`;
+    SeniorEdu.innerHTML = `<div><p><b>PU</b> ${currentResume.education["Senior Secondary"].institute}, ${currentResume.education["Senior Secondary"].cgpa}</p><div>`;
+    highSchool.innerHTML = `<div><p><b>High School</b> ${currentResume.education["High School"].institute}, ${currentResume.education["High School"].cgpa}</p><div>`;
 
 }
 
