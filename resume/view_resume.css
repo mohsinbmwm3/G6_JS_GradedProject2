@@ -46,6 +46,13 @@
     padding: 0px 0px 0px 20px;
 }
 
+
+.horizontal_class_no_padding h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: #001e4d;
+}
+
 .horizontal_class_no_padding_vertical {
     display: block;
     flex-direction: column;
@@ -53,9 +60,20 @@
     padding: 0px 0px 0px 20px;
 }
 
-.horizontal_class_no_padding_vertical .ul .li .p .b {
+.horizontal_class_no_padding_vertical ul li div p b {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
+    color: #001e4d;
+}
+
+.horizontal_class_no_padding_vertical ul li div p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #001e4d;
+}
+
+.horizontal_class_no_padding_vertical ul li {
+    font-family: 'Courier New', Courier, monospace;
+    color: #001e4d;
 }
 
 .vertical_class {
