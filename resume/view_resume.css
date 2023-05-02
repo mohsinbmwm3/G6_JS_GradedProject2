@@ -84,6 +84,12 @@
     min-width: 80%;
 }
 
+.vertical_class h1 {
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #001e4d;
+}
+
 .vertical_class h5 {
     vertical-align: bottom;
     text-align: right;
