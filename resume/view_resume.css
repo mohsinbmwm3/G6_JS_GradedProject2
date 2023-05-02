@@ -53,6 +53,11 @@
     padding: 0px 0px 0px 20px;
 }
 
+.horizontal_class_no_padding_vertical .ul .li .p .b {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
 .vertical_class {
     display: block;
     flex-direction: column;
